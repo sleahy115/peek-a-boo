@@ -22,4 +22,8 @@ $(document).ready(function(){
     $("#toggle-walrus").fadeToggle();
     $("#toggle-walrus-out").fadeToggle();
   });
+  $(".clickable-slide").click(function(){
+    $("#slide-walrus").slideToggle();
+    $("#slide-walrus-out").slideToggle();
+  });
 });
