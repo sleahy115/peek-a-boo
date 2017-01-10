@@ -1,24 +1,21 @@
-// Wouldn't add listener based on how it was typed in?????
-// $(document).ready(function() {
-//   $("p").click(function() {
-//     $(".walrus-showing").show();
-//     $(".walrus-hidden".hide();
-//   });
-// });
-
-// Would add listener... typed in by adding brackets as functions were written
-
-// $(document).ready(function(){
-//   $("p").click(function(){
-//     $(".walrus-showing").show();
-//     $(".walrus-hidden").hide();
-//   });
-// });
-
-
 $(document).ready(function(){
   $(".clickable").click(function(){
-    $(".walrus-showing").toggle();
-    $(".walrus-hidden").toggle();
+    $("#walrus-showing").toggle();
+    $("#walrus-hidden").toggle();
+  });
+
+  $( "button:first" ).click(function() {
+    $( "p:first" ).fadeToggle( "slow", "linear" );
+  });
+  $( "button:last" ).click(function() {
+    $( "p:last" ).fadeToggle( "fast", function() {
+      $( "#log" ).append( "<div>finished</div>" );
+    });
+  });
+  $("#click").click(function(){
+    $("#whaleFade").fadeIn("slow");
+  });
+  $("#clickOut").click(function(){
+    $("#whaleFade").fadeOut("slow");
   });
 });
