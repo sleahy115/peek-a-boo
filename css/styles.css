@@ -4,7 +4,14 @@
 #whaleFade {
   display: none;
 }
+#toggle-walrus-out {
+  display: none;
+}
 .clickable {
+  cursor: pointer;
+  color: #0088cc;
+}
+.clickable-fade-toggle {
   cursor: pointer;
   color: #0088cc;
 }

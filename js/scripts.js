@@ -18,4 +18,8 @@ $(document).ready(function(){
   $("#clickOut").click(function(){
     $("#whaleFade").fadeOut("slow");
   });
+  $(".clickable-fade-toggle").click(function(){
+    $("#toggle-walrus").fadeToggle();
+    $("#toggle-walrus-out").fadeToggle();
+  });
 });
